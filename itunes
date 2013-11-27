@@ -332,12 +332,12 @@ function _show_track() {
 
     echo -n "$preamble\"$name\""
     if [ -n "$artist" ]; then
-        echo -n " by $artist"
+        echo " by $artist"
     fi
     if [ -n "$album" ]; then
-        echo -n ", from \"$album\""
+        echo -n "\"$album\""
         if [ -n "$year" -a "$year" != 0 ]; then
-            echo -n " ($year)"
+            echo " ($year)"
         fi
     fi
     if [ -n "$current_track_id" -a -n "$current_track_pos" -a "$current_track_id" = "$id" ]; then
